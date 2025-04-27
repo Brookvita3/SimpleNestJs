@@ -7,9 +7,17 @@ export class CreateDeviceDto {
   })
   userId: string;
 
-  @ApiProperty({ example: 'iPhone 14 Pro Max', required: false })
+  @ApiProperty({
+    example: 'iPhone 14 Pro Max',
+    required: false,
+    description: 'Tên của thiết bị này',
+  })
   deviceName?: string;
 
-  @ApiProperty({ example: 'iOS', required: false })
+  @ApiProperty({
+    example: 'iOS',
+    required: false,
+    description: 'Loại thiết bị',
+  })
   deviceType?: string;
 }
